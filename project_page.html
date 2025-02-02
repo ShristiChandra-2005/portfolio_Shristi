@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Navbar</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+  <!-- Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha384-dyB6yoVG2LrXq4rri84pb6rfRbWbdAFeJ0h23zDDA0s3vriJj3sHgrjFfU0bQ2Bs" crossorigin="anonymous"></script>
+  
+  <style>
+    /* Style for the Navbar */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar {
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: red;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Add space below the navbar to avoid content overlap */
+    .content {
+      margin-top: 60px;
+    }
+
+    /* Card design */
+    .card {
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .card-text {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #f7b731;
+      color: white;
+    }
+
+    /* Adjust container and content for responsiveness */
+    .container {
+      margin-top: 100px;
+    }
+
+    @media (max-width: 767px) {
+      .col-sm-3, .col-sm-4 {
+        margin-bottom: 20px;
+      }
+    }
+    h2{
+        text-align: center;
+        color:rgb(255, 115, 0);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: underline;
+        
+    }
+    #p1{
+      height: 300px;
+      font-size: 15px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 500;
+      text-align: justify;
+    }
+    #height{
+      height: 380px;
+      font-size: 20px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 500;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fixed Navbar -->
+  <div class="navbar">
+    <a href="index.html" style="color: black; font-weight: bold; background-color: rgb(231, 156, 16); font-size: 22px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">HOME</a>
+  </div>
+
+  <!-- Page Content -->
+  <div class="container">
+    <h2>Web Development</h2>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Student Career Portal</h5>
+            <p class="card-text" id="p1">The Student Career Portal will guide students in choosing the best career path through a personalized quiz, 
+                along with features like career information, 
+                college/course suggestions, skill development resources, 
+                mentorship, and a community forum. It will help students
+                 make informed decisions
+                 based on their interests, strengths, and future goals.</p>
+                 <a href="#" class="btn btn-primary">GitHub Link</a>
+                 <a href="#" class="btn btn-primary">Live</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Delhi Travel Guide <Portal></Portal></h5>
+            <p class="card-text" id="p1">The Delhi Travel Guide project enhanced my web 
+              development skills and emphasized the importance of building user-friendly,
+               functional websites that address real-world needs. It showcases my ability
+                to blend technical expertise with creative design to create an engaging, 
+                practical solution for tourists. This project inspires me to continue 
+                developing web solutions that combine innovation with problem-solving.</p>
+            <a href="https://github.com/Samriddhi1102022/Delhi-travel-guide" class="btn btn-primary">GitHub Link</a>
+            <a href="https://samriddhi1102022.github.io/Delhi-travel-guide/" class="btn btn-primary">Live</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Online Test Portal</h5>
+            <p class="card-text" id="p1">
+              The Online Test Portal is my <b>major project from my diploma</b>.
+               It's a full-stack web application developed using Python with Django,
+                allowing users to take tests, track progress, and view results. 
+                The admin panel manages tests and users, while the backend ensures
+                 secure authentication and data handling. This project helped me 
+                 refine my skills in web development, database management, and security.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Apna Lucknow Portal</h5>
+            <p class="card-text" id="p1">The Apna Lucknow Portal is my minor project in diploma and a full-stack, user-friendly web application. It provides detailed information on Lucknow’s attractions, including food, parks, and travel routes. Designed for both tourists and locals, the portal enhances the user experience. This project helped me develop my skills in both front-end and back-end development. It was also a team project, allowing for collaboration and learning.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Machine Learning</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ++++++++++++++++++++ -->
+     
+    <h2>Java</h2>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card" id="height">
+          <div class="card-body">
+            <h5 class="card-title">File Zipper</h5>
+            <p class="card-text">The project implements a file compression utility that reduces the size of files for easier storage or transmission. It uses Huffman Coding, which is a widely-used lossless data compression algorithm, to compress the data. The Greedy Algorithm approach is used in Huffman Coding to construct the most efficient code based on the frequency of characters in the file.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" id="height">
+          <div class="card-body">
+            <h5 class="card-title">Map Navigator</h5>
+            <p class="card-text">The project models a network of roads (graph) where each location (node) is connected to other locations by edges (roads). Each road has a weight (distance, time, or cost), and Dijkstra's Algorithm is used to find the shortest path between a starting location and a destination.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" id="height">
+          <div class="card-body">
+            <h5 class="card-title">Chash Flow Minimizer</h5>
+            <p class="card-text">The Cash Flow Minimizer aims to simplify a network of debts among multiple parties by minimizing the number of transactions while ensuring that all debts are paid off. The project uses graph-based data structures to represent debts and employs a Heap data structure for efficient processing of transactions and balance adjustments.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" id="height">
+          <div class="card-body">
+            <h5 class="card-title">Sudoku Solver</h5>
+            <p class="card-text">The Sudoku Solver is a Java-based program that solves Sudoku puzzles using the Backtracking Algorithm. The solver fills empty cells of a given 9x9 Sudoku grid while ensuring that all rules of Sudoku are satisfied: each row, column, and 3x3 subgrid must contain all digits from 1 to 9 without repetition.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap and jQuery Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
