@@ -73,7 +73,7 @@ nav ul li a.active {
 }
 #pra{
   color: white;
-  font-size:17px;
+  font-size:15px;
   font-weight: 500;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -158,4 +158,10 @@ tr:nth-child(even) {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#pic{
+  object-fit:contain;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
 }
