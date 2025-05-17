@@ -4,15 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shristi Chandra | Portfolio</title>
-    
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <!-- Font Awesome -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha384-dyB6yoVG2LrXq4rri84pb6rfRbWbdAFeJ0h23zDDA0s3vriJj3sHgrjFfU0bQ2Bs" crossorigin="anonymous"></script>
-    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* //For Header section css code  */
+        .center-fade-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.center-fade-text {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  animation: fadeInOut 4s infinite;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fadeInOut {
+  0%,100% { opacity: 0; }
+  10%,90% { opacity: 1; }
+}
+
+.center-fade-text .wd { color: #ff9100; animation: colorPulse1 4s infinite; }
+.center-fade-text .ml { color: #007bff; animation: colorPulse2 4s infinite; }
+.center-fade-text .ai { color: #43a047; animation: colorPulse3 4s infinite; }
+.center-fade-text .dsa { color: #d32f2f; animation: colorPulse4 4s infinite; }
+.center-fade-text .sep { color: #888; padding: 0 0.5em; }
+
+@keyframes colorPulse1 {
+  0%,100% { color: #ff9100; }
+  50% { color: #ffab40; }
+}
+@keyframes colorPulse2 {
+  0%,100% { color: #007bff; }
+  50% { color: #40c4ff; }
+}
+@keyframes colorPulse3 {
+  0%,100% { color: #43a047; }
+  50% { color: #76ff03; }
+}
+@keyframes colorPulse4 {
+  0%,100% { color: #d32f2f; }
+  50% { color: #ff5252; }
+}
+
+/* Optional: Style hero buttons for consistency */
+.hero-btn {
+  font-weight: bold;
+  font-size: 21px;
+  color: blue;
+  background: #fff;
+  border: 2px solid #007bff;
+  border-radius: 25px;
+  padding: 8px 26px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+.hero-btn:hover {
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+}
+
+    </style>
 </head>
 <body>
    <!-- Header Section -->
@@ -20,40 +86,22 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div style="background-color:rgb(255, 145, 0);">
         <div class="container">
-            <!-- Brand and toggle for mobile -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- <a class="navbar-brand" href="#">Shristi Chandra</a> -->
             </div>
-
-            <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a style="color: black;font-weight: bold; 
-                    font-size:22px; font-family: Cambria, Cochin, Georgia, Times,
-                     'Times New Roman', serif;" href="#home">HOME</a></li>
-                    <li><a  style="color: black;font-weight: bold; 
-                        font-size:22px; font-family: Cambria, Cochin, Georgia, Times,
-                         'Times New Roman', serif;"  href="#about">ABOUT ME</a></li>
-                    <li><a style="color: black;font-weight: bold; 
-                        font-size:22px; font-family: Cambria, Cochin, Georgia, Times,
-                         'Times New Roman', serif;"  href="#project">PROJECTS</a></li>
-                    <li><a style="color: black;font-weight: bold; 
-                        font-size:22px; font-family: Cambria, Cochin, Georgia, Times,
-                         'Times New Roman', serif;"  href="#skill">SKILL</a></li>
-                    <li><a style="color: black;font-weight: bold; 
-                        font-size:22px; font-family: Cambria, Cochin, Georgia, Times,
-                         'Times New Roman', serif;"  href="#certficate">CERTIFICATE</a></li>
-                    <li><a  style="color: black;font-weight: bold; 
-                        font-size:22px; font-family: Cambria, Cochin, Georgia, Times,
-                         'Times New Roman', serif;" href="#achievements">ACHIEVEMENT</a></li>
-                    <li><a  style="color: black;font-weight: bold; 
-                        font-size:22px; font-family: Cambria, Cochin, Georgia, Times,
-                         'Times New Roman', serif;" href="#contact">CONTACT</a></li>
+                    <li><a style="color: black;font-weight: bold; font-size:22px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" href="#home">HOME</a></li>
+                    <li><a style="color: black;font-weight: bold; font-size:22px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"  href="#about">ABOUT ME</a></li>
+                    <li><a style="color: black;font-weight: bold; font-size:22px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"  href="#project">PROJECTS</a></li>
+                    <li><a style="color: black;font-weight: bold; font-size:22px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"  href="#skill">SKILL</a></li>
+                    <li><a style="color: black;font-weight: bold; font-size:22px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"  href="#certficate">CERTIFICATE</a></li>
+                    <li><a style="color: black;font-weight: bold; font-size:22px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" href="#achievements">ACHIEVEMENT</a></li>
+                    <li><a style="color: black;font-weight: bold; font-size:22px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -61,267 +109,254 @@
     </nav>
 </header>
 
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="content">
-            <h1>Hi, I'm <span class="highlight">Shristi Chandra</span></h1>
-            <h2><span class="typing-text"></span></h2>
-            <p id="pra" style="font-size: 20px;">Passionate Web Developer || Machine Learning || Artificial Intelligence || DSA</p>
-            <a href="project_page.html" class="btn" id="pra" style="font-weight: bold;font-size: 21px; color: blue;">View My Project</a>
-            <a href="Resume_page.html" target="_blank" class="btn" id="pra" style="font-weight: bold; font-size: 21px; color: blue;">View My Resume</a>
-            <br><br>
-            <div class="social-icons" id="mains">
-
-                <!-- Email -->
-                <a href="mailto:12shristichandra@gmail.com" title="Email">
-                  <i class="fas fa-envelope" style="color: aliceblue;"></i>
-                </a>
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/shristi-chandra-253a91273/" target="_blank" title="LinkedIn">
-                  <i class="fab fa-linkedin" style="color: blue;"></i>
-                </a>
-                <!-- GitHub -->
-                <a href="https://github.com/ShristiChandra-2005" target="_blank" title="GitHub">
-                  <i class="fab fa-github" style="color:white;"></i>
-                </a>
-              </div>
-        </div>
-        <img src="me__pic-removebg-preview.png" alt="Shristi Chandra" id="pic">
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about">
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-6 p-4 bg-light shadow rounded">
-                    <h2>About Me</h2>
-                    <p id="pra" style="color: black;">I am Shristi Chandra, pursuing B.Tech in Computer Science Engineering (Artificial Intelligence) at IGDTUW through lateral entry. I have a strong passion for problem-solving,
-                         technology, and innovation, with a keen interest in AI, cybersecurity, and cloud computing. I have participated in various hackathons, technical programs, 
-                        and industry events, including , Goldman Sachs Possibilities Summit, and Intel AI Hackathon.
-                        I have received offers for internships at<b> SPI Pvt Ltd, API Pvt Ltd, and Dhoot Pvt Ltd</b>  reflecting 
-                        my industry exposure. I actively work on web development and AI-driven projects,
-                         such as <b> Student Career Guide, Fake News Detection , Online Test Portal, and APNA Lucknow</b>.
-                        Beyond academics, I enjoy reading books and playing badminton, 
-                        which help me stay balanced and motivated. I am always eager to learn,
-                         adapt, and contribute to meaningful technological advancements.</p>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="row" style="align-items: center;">
+            <div class="col-md-7 col-sm-12 content">
+                <h1>Hi, I'm <span class="highlight">Shristi Chandra</span></h1>
+                <h2><span class="typing-text"></span></h2>
+                <div class="center-fade-container">
+                  <p class="center-fade-text">
+                    <span class="wd">Passionate Web Developer</span>
+                    <span class="sep">||</span>
+                    <span class="ml">Machine Learning</span>
+                    <span class="sep">||</span>
+                    <span class="ai">Artificial Intelligence</span>
+                    <span class="sep">||</span>
+                    <span class="dsa">DSA</span>
+                  </p>
                 </div>
-                <div class="col-md-6 p-4 bg-light shadow rounded">
-                    <h2>Education</h2>
-                    <table>
-                        <tr>
-                            <th>Degree</th>
-                            <th>Institution</th>
-                            <th>Year</th>
-                        </tr>
-                        <tr>
-                            <td>Bachelor of Technology - CSE (AI)</td>
-                            <td>Indira Gandhi Delhi Technical University for Women</td>
-                            <td>PURSUING</td>
-                        </tr>
-                        <tr>
-                            <td>Diploma - Information Technology</td>
-                            <td>Government Girls Polytechnic, Varanasi</td>
-                            <td>2021 – 2024</td>
-                        </tr>
-                        <tr>
-                            <td>Senior Secondary (12th)</td>
-                            <td>Town National Inter College, Saidpur-Ghazipur</td>
-                            <td>2021</td>
-                        </tr>
-                        <tr>
-                            <td>Secondary (10th)</td>
-                            <td>Rainbow Modern School, Ghazipur</td>
-                            <td>2019</td>
-                        </tr>
-                    </table>
-                
-                </body>
+                <a href="project_page.html" class="btn hero-btn">View My Project</a>
+                <a href="https://drive.google.com/file/d/1aAwSJF3W5to0kVBnzaHzvXOGI2RtGqy2/view" target="_blank" class="btn hero-btn">View My Resume</a>
+                <br><br>
+                <div class="social-icons" id="mains">
+                    <a href="mailto:12shristichandra@gmail.com" title="Email"><i class="fas fa-envelope" style="color: aliceblue;"></i></a>
+                    <a href="https://www.linkedin.com/in/shristi-chandra-253a91273/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="color: blue;"></i></a>
+                    <a href="https://github.com/ShristiChandra-2005" target="_blank" title="GitHub"><i class="fab fa-github" style="color:white;"></i></a>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12 text-center">
+                <img src="me__pic-removebg-preview.png" alt="Shristi Chandra" id="pic">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 p-4 bg-light shadow rounded">
+                <h2>About Me</h2>
+                <p id="pra" style="color: black;">I am Shristi Chandra, pursuing B.Tech in Computer Science Engineering (Artificial Intelligence) at IGDTUW through lateral entry. I have a strong passion for problem-solving,
+                     technology, and innovation, with a keen interest in AI, cybersecurity, and cloud computing. I have participated in various hackathons, technical programs, 
+                    and industry events, including , Goldman Sachs Possibilities Summit, and Intel AI Hackathon.
+                    I have received offers for internships at<b> SPI Pvt Ltd, API Pvt Ltd, and Dhoot Pvt Ltd</b>  reflecting 
+                    my industry exposure. I actively work on web development and AI-driven projects,
+                     such as <b> Student Career Guide, Fake News Detection , Online Test Portal, and APNA Lucknow</b>.
+                    Beyond academics, I enjoy reading books and playing badminton, 
+                    which help me stay balanced and motivated. I am always eager to learn,
+                     adapt, and contribute to meaningful technological advancements.</p>
+            </div>
+            <div class="col-md-6 p-4 bg-light shadow rounded">
+                <h2>Education</h2>
+                <div class="table-responsive">
+                <table>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Technology - CSE (AI)</td>
+                        <td>Indira Gandhi Delhi Technical University for Women</td>
+                        <td>PURSUING</td>
+                    </tr>
+                    <tr>
+                        <td>Diploma - Information Technology</td>
+                        <td>Government Girls Polytechnic, Varanasi</td>
+                        <td>2021 – 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Senior Secondary (12th)</td>
+                        <td>Town National Inter College, Saidpur-Ghazipur</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>Secondary (10th)</td>
+                        <td>Rainbow Modern School, Ghazipur</td>
+                        <td>2019</td>
+                    </tr>
+                </table>
                 </div>
             </div>
         </div>
-    </section>
-    <br>
-    <!-- Project Section -->
-    <section id="project">
-        <div style="background: black; height:150px ;">
+    </div>
+</section>
+
+<!-- Project Section -->
+<section id="project">
+    <div class="container">
         <h2 style="text-align: center;" id="titles">PROJECTS</h2><br>
-        <!-- <div class="container mx-auto mt-10"> -->
-            <div class="col-md-4" id="projects">
-                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">Web Development</h3>
-                    <p class="text-gray-1000"  style="color: white;" id="pra">I have worked on various full-stack web applications utilizing HTML
-                        , CSS, Bootstrap, JavaScript for the front-end, and Python with
-                         Django for the back-end. These projects involved building dynamic
-                          and responsive platforms, implementing user-friendly interfaces,
-                           and ensuring smooth integration between the front-end and back-end
-                            to deliver seamless user experiences.
-
-                    </p>
-                </div>
-                <div class="col-md-4 "id="projects">
-                    <h3 class="text-2xl font-semibold text-green-600 mb-4">Machine Learning</h3>
-                    <p class="text-gray-700" style="color: white;" id="pra">I have implemented various machine learning models for tasks like image classification, natural language processing, and predictive analytics using Python libraries such as TensorFlow, scikit-learn, and pandas. My projects focus on solving real-world problems through AI.</p>
-                </div>
-                <div class="col-md-4" id="projects">
-                    <h3 class="text-2xl font-semibold text-red-600 mb-4">JAVA</h3>
-                    <p class="text-gray-700"  style="color: white;"id="pra">I have developed several standalone applications using Java, including a File Zipper for file compression, a classic Snake Game for demonstrating basic game mechanics, and Map Navigation for route optimization. These applications were built entirely in Java and helped me refine my skills in object-oriented programming, algorithms, and GUI development.</p>
-                </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12" id="projects">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-4">Web Development</h3>
+                <p class="text-gray-1000"  style="color: white;" id="pra">I have worked on various full-stack web applications utilizing HTML
+                    , CSS, Bootstrap, JavaScript for the front-end, and Python with
+                     Django for the back-end. These projects involved building dynamic
+                      and responsive platforms, implementing user-friendly interfaces,
+                       and ensuring smooth integration between the front-end and back-end
+                        to deliver seamless user experiences.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12" id="projects">
+                <h3 class="text-2xl font-semibold text-green-600 mb-4">Machine Learning</h3>
+                <p class="text-gray-700" style="color: white;" id="pra">I have implemented various machine learning models for tasks like image classification, natural language processing, and predictive analytics using Python libraries such as TensorFlow, scikit-learn, and pandas. My projects focus on solving real-world problems through AI.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12" id="projects">
+                <h3 class="text-2xl font-semibold text-red-600 mb-4">JAVA</h3>
+                <p class="text-gray-700"  style="color: white;"id="pra">I have developed several standalone applications using Java, including a File Zipper for file compression, a classic Snake Game for demonstrating basic game mechanics, and Map Navigation for route optimization. These applications were built entirely in Java and helped me refine my skills in object-oriented programming, algorithms, and GUI development.</p>
             </div>
         </div>
     </div>
-    </section>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <section id="skill">
-        <div style="background-color: aliceblue; height: 350px;"><br>
+</section>
+
+<!-- Skill Section -->
+<section id="skill">
+    <div class="container" style="background-color: aliceblue;">
         <h2>SKILL</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <h3 class="text-center">Technical Skills</h3>
-                   <p id="pra" style="color: black;"><b>Programming Languages : </b>Java , Python (Django), C++ </p> 
-                   <p id="pra" style="color: black;"><b>Web Development : </b>HTML, CSS, JavaScript,Bootstrap</p>
-                   <p id="pra" style="color: black;"><b>AI&ML:</b>Supervised/Unsupervised Learning, Anomaly Detection</p>
-                   <!-- <p><b>Cybersecurity:</b>Network Traffic Analysis, Threat Detection</p> -->
-                   <p id="pra" style="color: black;" ><b>Version Control :</b>Git, GitHub</p>
-                   <p id="pra" style="color: black;"> <b>Core Areas :</b>DSA,OPPS,OS,CN</p>
- 
-                </div>
-                <div class="col-md-6">
-                    <h3 class="text-center">Soft Skills</h3>
-                    <P class="text-center" id="pra" style="color: black;">Problem-Solving & Logical Thinking</P>
-                    <p class="text-center" id="pra" style="color: black;" >Teamwork & Collaboration</p>
-                    <p class="text-center" id="pra" style="color: black;" >Adaptability & Quick Learning</p>
-                    <p class="text-center" id="pra" style="color: black;">Effective Communication</p>
-                    <p class="text-center" id="pra" style="color: black;">Leadership & Project Management</p>
-                </div>
+        <div class="row">
+            <div class="col-md-5 col-sm-6 col-xs-12">
+                <h3 class="text-center">Technical Skills</h3>
+               <p id="pra" style="color: black;"><b>Programming Languages : </b>Java , Python (Django), C++ </p>
+               <p id="pra" style="color: black;"><b>Web Development : </b>HTML, CSS, JavaScript,Bootstrap</p>
+               <p id="pra" style="color: black;"><b>AI&ML:</b>Supervised/Unsupervised Learning, Anomaly Detection</p>
+               <p id="pra" style="color: black;" ><b>Version Control :</b>Git, GitHub</p>
+               <p id="pra" style="color: black;"> <b>Core Areas :</b>DSA,OPPS,OS,CN</p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <h3 class="text-center">Soft Skills</h3>
+                <P class="text-center" id="pra" style="color: black;">Problem-Solving & Logical Thinking</P>
+                <p class="text-center" id="pra" style="color: black;" >Teamwork & Collaboration</p>
+                <p class="text-center" id="pra" style="color: black;" >Adaptability & Quick Learning</p>
+                <p class="text-center" id="pra" style="color: black;">Effective Communication</p>
+                <p class="text-center" id="pra" style="color: black;">Leadership & Project Management</p>
             </div>
         </div>
     </div>
-    </section>
+</section>
 
-    <!-- Certificates Section -->
-    <section id="certficate">
-        <h2>CERTIFICATE</h2>
-        <br>
-        <div class="container">
-        <table>
-            <tr>
-                <th>Certification</th>
-                <th>Institution</th>
-                <th>Year</th>
-                <th>Certificate Link</th>
-            </tr>
-            <tr>
-                <td>AWS CLOUD CLUB</td>
-                <td>IGDTUW</td>
-                <td>2024</td>
-                <td><a href="https://drive.google.com/file/d/1P_48dpFzIWv1YU3PCz_QuBh_2ZGj3omq/view?usp=drivesdk" target="_blank">View Certificate</a></td>
-            </tr>
-            <tr>
-                <td>Agnirva Space Internship Program</td>
-                <td>AICTE</td>
-                <td>2024</td>
-                <td><a href="https://drive.google.com/file/d/1QdBkONqtLS4URSdOZhhx2-EV-SY7vRZ7/view" target="_blank">View Certificate</a></td>
-            </tr>
-             <tr>
-                <td>Advanced Industry Practices In Emerging Technologies</td>
-                <td>IGDTUW</td>
-                <td>2024</td>
-                <td><a href="https://drive.google.com/file/d/1hZrBCxFCJ-3gklESkhjo1JUbhFmXP5Bb/view" target="_blank">View Certificate</a></td>
-            </tr>
-            <tr>
-                <td>Cyber Security and Ethical Hacking Bootcamp</td>
-                <td>LetsUpgrade</td>
-                <td>2024</td>
-                <td><a href="https://drive.google.com/file/d/1dEbXxQeooPl4Yvp3QT7JCr9Rs73OER5S/view" target="_blank">View Certificate</a></td>
-            </tr>
-            <tr>
-                <td>Web Application & Its Security</td>
-                <td>NIELIT</td>
-                <td>2024</td>
-                <td><a href="https://drive.google.com/file/d/12rCbj5uVJFYm6g6z42hfnslF5dD6Y5S_/view" target="_blank">View Certificate</a></td>
-            </tr>
-            <tr>
-                <td>Employability Skills Program</td>
-                <td>Mahindra Naandi Foundation</td>
-                <td>2023</td>
-                <td><a href="https://drive.google.com/file/d/1EtNJcuuY83RIglkmGZTIvPD4-sMQlPmj/view" target="_blank">View Certificate</a></td>
-            </tr>
-            <tr>
-                <td>Python(Django)</td>
-                <td>DigiCoder Pvt.Ltd Lucknow</td>
-                <td>2023</td>
-                <td><a href="https://drive.google.com/file/d/19B_3Hj0hSwv8FLdjv5a1yl4rzjPZ-czH/view" target="_blank">View Certificate</a></td>
-            </tr>
-        </table>
+<!-- Certificates Section -->
+<section id="certficate">
+    <div class="container">
+    <h2>CERTIFICATE</h2>
+    <br>
+    <div class="table-responsive">
+    <table>
+        <tr>
+            <th>Certification</th>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>Certificate Link</th>
+        </tr>
+        <tr>
+            <td>AWS CLOUD CLUB</td>
+            <td>IGDTUW</td>
+            <td>2024</td>
+            <td><a href="https://drive.google.com/file/d/1P_48dpFzIWv1YU3PCz_QuBh_2ZGj3omq/view?usp=drivesdk" target="_blank">View Certificate</a></td>
+        </tr>
+        <tr>
+            <td>Agnirva Space Internship Program</td>
+            <td>AICTE</td>
+            <td>2024</td>
+            <td><a href="https://drive.google.com/file/d/1QdBkONqtLS4URSdOZhhx2-EV-SY7vRZ7/view" target="_blank">View Certificate</a></td>
+        </tr>
+         <tr>
+            <td>Advanced Industry Practices In Emerging Technologies</td>
+            <td>IGDTUW</td>
+            <td>2024</td>
+            <td><a href="https://drive.google.com/file/d/1hZrBCxFCJ-3gklESkhjo1JUbhFmXP5Bb/view?target=_blank">View Certificate</a></td>
+        </tr>
+        <tr>
+            <td>Cyber Security and Ethical Hacking Bootcamp</td>
+            <td>LetsUpgrade</td>
+            <td>2024</td>
+            <td><a href="https://drive.google.com/file/d/1dEbXxQeooPl4Yvp3QT7JCr9Rs73OER5S/view" target="_blank">View Certificate</a></td>
+        </tr>
+        <tr>
+            <td>Web Application & Its Security</td>
+            <td>NIELIT</td>
+            <td>2024</td>
+            <td><a href="https://drive.google.com/file/d/12rCbj5uVJFYm6g6z42hfnslF5dD6Y5S_/view" target="_blank">View Certificate</a></td>
+        </tr>
+        <tr>
+            <td>Employability Skills Program</td>
+            <td>Mahindra Naandi Foundation</td>
+            <td>2023</td>
+            <td><a href="https://drive.google.com/file/d/1EtNJcuuY83RIglkmGZTIvPD4-sMQlPmj/view" target="_blank">View Certificate</a></td>
+        </tr>
+        <tr>
+            <td>Python(Django)</td>
+            <td>DigiCoder Pvt.Ltd Lucknow</td>
+            <td>2023</td>
+            <td><a href="https://drive.google.com/file/d/19B_3Hj0hSwv8FLdjv5a1yl4rzjPZ-czH/view" target="_blank">View Certificate</a></td>
+        </tr>
+    </table>
     </div>
-    </section>
-    <br><br>
-    <!-- Achievements Section -->
-    
-    <section id="achievements">
-        <div style="background-color: aliceblue; height: 400px;" >
-        <div class="container">
-           
-        <h2>ACHIEVEMENT</h2>
-        <!-- <div style="background-color: aliceblue;"> -->
-        
+    </div>
+</section>
 
-        <table border="1" cellpadding="10" cellspacing="0">
-            <thead>
-              <tr>
-                <th>Category</th>
-                <th>Achievement</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>On-Campus Placement</strong></td>
-                <td>Four Company Internship Offers during <b>Diploma:</b> <strong>SPI Pvt. Ltd. Lucknow</strong>, <strong>API Pvt. Ltd. Lucknow</strong>, <strong>Digicoder Pvt. Ltd. Lucknow</strong>, <strong>Dhoot Transmission Pvt. Ltd. MP</strong></td>
-              </tr>
-              <tr>
-                <td><strong>Hackathons & Competitions</strong></td>
-                <td>Participant in <strong>MSME 4.0 Initiative</strong>, <strong>GeekforGeeks hackathon</strong>, and <strong>Intel AI Hackathon</strong></td>
-              </tr>
-              <tr>
-                <td><strong>Certifications</strong></td>
-                <td>LetUpgrade and Digicoder Pvt. Ltd. Lucknow certifications and Work on many Project.</td>
-              </tr>
-              <tr>
-                <td><strong>Projects</strong></td>
-                <td>Developed <strong>Student Career Program</strong>, <strong>Apna Lucknow</strong>, <strong>Online Test Portal</strong>; worked on <strong>Machine Learning projects</strong> and <strong>Java project</strong></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+<!-- Achievements Section -->
+<section id="achievements">
+    <div class="container">
+    <h2>ACHIEVEMENT</h2>
+    <div class="table-responsive">
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Achievement</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>On-Campus Placement</strong></td>
+            <td>Four Company Internship Offers during <b>Diploma:</b> <strong>SPI Pvt. Ltd. Lucknow</strong>, <strong>API Pvt. Ltd. Lucknow</strong>, <strong>Digicoder Pvt. Ltd. Lucknow</strong>, <strong>Dhoot Transmission Pvt. Ltd. MP</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Hackathons & Competitions</strong></td>
+            <td>Participant in <strong>MSME 4.0 Initiative</strong>, <strong>GeekforGeeks hackathon</strong>, and <strong>Intel AI Hackathon</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Certifications</strong></td>
+            <td>LetUpgrade and Digicoder Pvt. Ltd. Lucknow certifications and Work on many Project.</td>
+          </tr>
+          <tr>
+            <td><strong>Projects</strong></td>
+            <td>Developed <strong>Student Career Program</strong>, <strong>Apna Lucknow</strong>, <strong>Online Test Portal</strong>; worked on <strong>Machine Learning projects</strong> and <strong>Java project</strong></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     </div>
-    </section>
-  <!-- Contact section  -->
-    <section id="contact">
-        
+</section>
+
+<!-- Contact section  -->
+<section id="contact">
+    <div class="container text-center">
         <h2>CONTACT US</h2><br><br>
         <div id="body1">
-        <div class="social-icons">
-            
-            <!-- Email -->
-            <a href="mailto:12shristichandra@gmail.com" title="Email">
-              <i class="fas fa-envelope" style="color: white;"></i>
-            </a>
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/shristi-chandra-253a91273/" target="_blank" title="LinkedIn">
-                <i class="fab fa-linkedin" style="color: blue;"></i>
-              </a>
-            <!-- GitHub -->
-            <a href="https://github.com/ShristiChandra-2005" target="_blank" title="GitHub">
-              <i class="fab fa-github" style="color: white;"></i>
-            </a>
-          </div>
+            <div class="social-icons">
+                <a href="mailto:12shristichandra@gmail.com" title="Email"><i class="fas fa-envelope" style="color: white;"></i></a>
+                <a href="https://www.linkedin.com/in/shristi-chandra-253a91273/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="color: blue;"></i></a>
+                <a href="https://github.com/ShristiChandra-2005" target="_blank" title="GitHub"><i class="fab fa-github" style="color: white;"></i></a>
+            </div>
         </div>
-    </section>
-    <!-- Bootstrap and jQuery Scripts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </div>
+</section>
+
+<!-- Bootstrap and jQuery Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
