@@ -1,0 +1,143 @@
+/* --- Custom Properties (Variables) --- */
+:root {
+    --primary-color: #ff8c00; /* Dark Orange */
+    --secondary-color: #0d6efd; 
+    --bg-color: #121212;
+    --surface-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --heading-color: #ffffff;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto Slab', serif;
+}
+
+/* --- Global Styles --- */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+    font-family: var(--font-secondary);
+    font-weight: 700;
+}
+
+/* --- Navbar --- */
+.navbar {
+    background-color: rgba(30, 30, 30, 0.85);
+    backdrop-filter: blur(10px);
+}
+.navbar .navbar-brand {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+}
+.btn-primary:hover {
+    background-color: #e67e00;
+    border-color: #e67e00;
+}
+
+/* --- Page Hero --- */
+.page-hero {
+    padding-top: 150px;
+    padding-bottom: 80px;
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)), url('your-bg.jpg');
+    background-size: cover;
+    border-bottom: 2px solid var(--primary-color);
+}
+.page-hero h1 {
+    font-size: 3.5rem;
+}
+
+/* --- Filter Buttons --- */
+.filter-btn {
+    background-color: transparent;
+    border: 2px solid var(--surface-color);
+    color: var(--text-color);
+    margin: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.filter-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--heading-color);
+}
+.filter-btn.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--heading-color);
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.5);
+}
+
+/* --- Project Card --- */
+.project-card {
+    background: rgba(30, 30, 30, 0.6); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: var(--primary-color);
+}
+
+.project-card .card-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.project-card .card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex-grow: 1; /* Pushes the links to the bottom */
+}
+
+.project-card .card-links {
+    margin-top: 20px;
+}
+
+.project-card .btn-card {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.project-card .btn-card:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--heading-color);
+}
+.project-card .btn-card i {
+    margin-right: 8px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .page-hero {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+}

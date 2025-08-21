@@ -1,285 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PROJECT_PAGE</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shristi Chandra | My Projects</title>
     
-  <!-- Font Awesome -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha384-dyB6yoVG2LrXq4rri84pb6rfRbWbdAFeJ0h23zDDA0s3vriJj3sHgrjFfU0bQ2Bs" crossorigin="anonymous"></script>
-  
-  <style>
-    /* Style for the Navbar */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    .navbar {
-      background-color: #333;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      padding: 10px 0;
-      text-align: center;
-      z-index: 1000;
-    }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    .navbar a {
-      color: red;
-      font-size: 18px;
-      text-decoration: none;
-      padding: 14px 20px;
-      display: inline-block;
-    }
-
-    .navbar a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    /* Add space below the navbar to avoid content overlap */
-    .content {
-      margin-top: 60px;
-    }
-
-    /* Card design */
-    .card {
-      border: 1px solid #ddd;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease-in-out;
-    }
-
-    .card:hover {
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .card-body {
-      padding: 20px;
-    }
-
-    .card-title {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .card-text {
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      background-color: #f7b731;
-      color: white;
-    }
-
-    /* Adjust container and content for responsiveness */
-    .container {
-      margin-top: 100px;
-    }
-
-    @media (max-width: 767px) {
-      .col-sm-3, .col-sm-4 {
-        margin-bottom: 20px;
-      }
-    }
-    h2{
-        text-align: center;
-        color:rgb(255, 115, 0);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 40px;
-        font-weight: bold;
-        text-decoration: underline;
-        
-    }
-    #p1{
-      height: 300px;
-      font-size: 15px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-weight: 500;
-      text-align: justify;
-    }
-    #height{
-      height: 400px;
-
-    }
-    #pp{
-      font-size: 15px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-weight: 500;
-      text-align: justify;
-
-    } 
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.card-text {
-  flex-grow: 1;
-}
-
-.btn {
-  margin-top: auto;
-}
-
-  </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="projectcStyle.css">
 </head>
 <body>
 
-  <!-- Fixed Navbar -->
-  <div class="navbar">
-    <a href="index.html" style="color: black; font-weight: bold; background-color: rgb(231, 156, 16); font-size: 22px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">HOME</a>
-  </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Shristi Chandra</a>
+            <a href="index.html" class="btn btn-primary ms-auto">
+                <i class="fas fa-arrow-left me-2"></i>Back to Portfolio
+            </a>
+        </div>
+    </nav>
 
-  <!-- Page Content -->
-  <div class="container">
-    <h2>Web Development</h2><br>
-    <div class="row">
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Student Career Portal</h5>
-            <p class="card-text" id="p1">The Student Career Portal will guide students in choosing the best career path through a personalized quiz, 
-                along with features like career information, 
-                college/course suggestions, skill development resources, 
-                mentorship, and a community forum. It will help students
-                 make informed decisions
-                 based on their interests, strengths, and future goals.</p>
-                 <a href="https://github.com/TeamWork-StudentCareerPortal/Student-career-guide-portal" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">GitHub Link</a><br>
-                 <a href="https://teamwork-studentcareerportal.github.io/Student-career-guide-portal/" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">Live</a>
-          </div>
+    <header class="page-hero">
+        <div class="container text-center">
+            <h1 data-aos="fade-down">My Work & Projects</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="200">A selection of my work in different fields.</p>
         </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Delhi Travel Guide <Portal></Portal></h5>
-            <p class="card-text" id="p1">The Delhi Travel Guide project enhanced my web 
-              development skills and emphasized the importance of building user-friendly,
-               functional websites that address real-world needs. It showcases my ability
-                to blend technical expertise with creative design to create an engaging, 
-                practical solution for tourists. This project inspires me to continue 
-                developing web solutions that combine innovation with problem-solving.</p>
-            <a href="https://github.com/Samriddhi1102022/Delhi-travel-guide" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">GitHub Link</a><br>
-            <a href="https://samriddhi1102022.github.io/Delhi-travel-guide/" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">Live</a>
-          </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="300">
+            <div class="col text-center" id="filter-btns">
+                <button class="btn filter-btn active" data-filter="all">All</button>
+                <button class="btn filter-btn" data-filter="web">Web Development</button>
+                <button class="btn filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="btn filter-btn" data-filter="java">Java</button>
+            </div>
         </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Online Test Portal</h5>
-            <p class="card-text" id="p1">
-              The Online Test Portal is my <b>major project from my diploma</b>.
-               It's a full-stack web application developed using Python with Django,
-                allowing users to take tests, track progress, and view results. 
-                The admin panel manages tests and users, while the backend ensures
-                 secure authentication and data handling. This project helped me 
-                 refine my skills in web development, database management, and security.
-            </p>
-            <a href="https://github.com/OnlineMood/Online-Test-Portal.git" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">Github link</a><br>
-            <!-- <a href="#" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">Live</a> -->
-          </div>
+
+        <div class="row g-4" id="project-grid">
+            <div class="col-lg-4 col-md-6 project-item web" data-aos="fade-up">
+                <div class="project-card">
+                    <h3 class="card-title">WalletX – Secure Digital Wallet</h3>
+                    <p class="card-text">A full-stack digital wallet with user/admin panels, built with Node.js, Express, and MongoDB for secure virtual money management.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/ShristiChandra-2005/WalletX" target="_blank" class="btn-card"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6 project-item web" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card">
+                    <h3 class="card-title">IGDTUW LE-Guide</h3>
+                    <p class="card-text">A comprehensive portal for lateral entry students, providing roadmaps for DSA, exam prep, and career growth using Python & Django.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/ShristiChandra-2005/LE-Guide" target="_blank" class="btn-card"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://shristichandra-2005.github.io/LE-Guide/" target="_blank" class="btn-card"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 project-item web" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card">
+                    <h3 class="card-title">Student Career Portal</h3>
+                    <p class="card-text">A personalized guide for students with quizzes, career info, and mentorship to help them make informed decisions.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/TeamWork-StudentCareerPortal/Student-career-guide-portal" target="_blank" class="btn-card"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://teamwork-studentcareerportal.github.io/Student-career-guide-portal/" target="_blank" class="btn-card"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 project-item web" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-card">
+                    <h3 class="card-title">Delhi Travel Guide</h3>
+                    <p class="card-text">A user-friendly site blending technical expertise with creative design to create an engaging, practical solution for tourists exploring Delhi.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/Samriddhi1102022/Delhi-travel-guide" target="_blank" class="btn-card"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://samriddhi1102022.github.io/Delhi-travel-guide/" target="_blank" class="btn-card"><i class="fas fa-external-link-alt"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6 project-item web" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-card">
+                    <h3 class="card-title">Online Test Portal</h3>
+                    <p class="card-text">My diploma major project. A full-stack web application using Python (Django) for users to take tests and track progress.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/OnlineMood/Online-Test-Portal.git" target="_blank" class="btn-card"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 project-item ml" data-aos="fade-up">
+                <div class="project-card">
+                    <h3 class="card-title">Smart-Salary-Vision</h3>
+                    <p class="card-text">An ML platform to predict salaries based on age, education, and experience. Supports dashboard and bulk CSV predictions.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/ShristiChandra-2005/Smart-Salary-Vision" target="_blank" class="btn-card"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 project-item ml" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card">
+                    <h3 class="card-title">Twitter Sentiment Analysis</h3>
+                    <p class="card-text">Built a Logistic Regression model using TensorFlow to classify tweet sentiments, with a real-time interactive UI.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/ShristiChandra-2005/Twitter-Sentiment-Analysis" target="_blank" class="btn-card"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 project-item ml" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card">
+                    <h3 class="card-title">Multiple Disease Prediction</h3>
+                    <p class="card-text">Uses ML to predict heart disease and diabetes by analyzing patient data, helping in early detection and health management.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/ShristiChandra-2005/Multiple-Dieses-Prediction.git" target="_blank" class="btn-card"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 project-item ml" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-card">
+                    <h3 class="card-title">Fake News Detection</h3>
+                    <p class="card-text">Uses ML and NLP to identify false information by analyzing text patterns, helping to combat misinformation online.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/ShristiChandra-2005/Fake_News_Detecter.git" target="_blank" class="btn-card"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 project-item java" data-aos="fade-up">
+                <div class="project-card">
+                    <h3 class="card-title">File Zipper</h3>
+                    <p class="card-text">A file compression utility that reduces file sizes using the Huffman Coding lossless data compression algorithm.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/ShristiChandra-2005/File-Zipper.git" target="_blank" class="btn-card"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Apna Lucknow Portal</h5>
-            <p class="card-text" id="p1">The Apna Lucknow Portal is my minor project in diploma and a full-stack, user-friendly web application. It provides detailed information on Lucknow’s attractions, including food, parks, and travel routes. Designed for both tourists and locals, the portal enhances the user experience. This project helped me develop my skills in both front-end and back-end development. It was also a team project, allowing for collaboration and learning.</p>
-            <a href="https://github.com/ShristiChandra-2005/Apna-Lucknow-Portal.git" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">Github link</a><br>
-            <!-- <a href="#" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">Live</a> -->
-          </div>
-        </div>
-      </div>
-    </div>
-<br><br><hr>
-<br>
-    <h2>Machine Learning</h2><br>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card" style="height:300px;">
-          <div class="card-body">
-            <h5 class="card-title">Twitter Sentiment Analysis</h5><br><br>
-            <p class="card-text" id="pp">Built a Logistic Regression model using TensorFlow and Scikit-learn to classify tweet sentiments; applied TF-IDF and created a real-time interactive UI with ipywidgets.</p>
-            <a href="https://github.com/ShristiChandra-2005/Twitter-Sentiment-Analysis" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">Github link</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card" style="height: 300px;">
-          <div class="card-body">
-            <h5 class="card-title">Multiple Dieses Prediction</h5><br>
-            <p class="card-text" id="pp">The Multiple Disease Prediction project uses machine learning to predict heart disease and diabetes by analyzing patient data. It helps in early detection and timely intervention for better health management.</p>
-            <a href="https://github.com/ShristiChandra-2005/Multiple-Dieses-Prediction.git" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">Github link</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card" style="height: 300px;">
-          <div class="card-body">
-            <h5 class="card-title">Fake News Detection</h5><br>
-            <p class="card-text" id="pp">Fake News Detection uses machine learning and NLP to identify false or misleading information in news and online content. It analyzes text patterns to distinguish reliable news from fake, helping combat misinformation.</p>
-            <a href="https://github.com/ShristiChandra-2005/Fake_News_Detecter.git" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">Github link</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br><br><hr>
-<br>
-    <!-- ++++++++++++++++++++ -->
-     
-    <h2>Java</h2><br>
-    <div class="row">
-      <div class="col-sm-3">
-        <div class="card" id="height">
-          <div class="card-body">
-            <h5 class="card-title">File Zipper</h5>
-            <p class="card-text" id="pp">The project implements a file compression utility that reduces the size of files for easier storage or transmission. It uses Huffman Coding, which is a widely-used lossless data compression algorithm, to compress the data. The Greedy Algorithm approach is used in Huffman Coding to construct the most efficient code based on the frequency of characters in the file.</p>
-            <a href="https://github.com/ShristiChandra-2005/File-Zipper.git" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">Github link</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card" id="height">
-          <div class="card-body">
-            <h5 class="card-title">Map Navigator</h5>
-            <p class="card-text" id="pp">The project models a network of roads (graph) where each location (node) is connected to other locations by edges (roads). Each road has a weight (distance, time, or cost), and Dijkstra's Algorithm is used to find the shortest path between a starting location and a destination.</p>
-            <a href="https://github.com/ShristiChandra-2005/Map-Navigator.git" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">Github link</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card" id="height">
-          <div class="card-body">
-            <h5 class="card-title">Cash Flow Minimizer</h5>
-            <p class="card-text" id="pp">The Cash Flow Minimizer aims to simplify a network of debts among multiple parties by minimizing the number of transactions while ensuring that all debts are paid off. The project uses graph-based data structures to represent debts and employs a Heap data structure for efficient processing of transactions and balance adjustments.</p>
-            <a href="https://github.com/ShristiChandra-2005/Cash-Flow-Minimizer.git" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">Github link</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="card" id="height">
-          <div class="card-body">
-            <h5 class="card-title">Sudoku Solver</h5>
-            <p class="card-text" id="pp">The Sudoku Solver is a Java-based program that solves Sudoku puzzles using the Backtracking Algorithm. The solver fills empty cells of a given 9x9 Sudoku grid while ensuring that all rules of Sudoku are satisfied: each row, column, and 3x3 subgrid must contain all digits from 1 to 9 without repetition.</p>
-            <a href="https://github.com/ShristiChandra-2005/Sudoku-Solver.git" class="btn" style="font-size: 20px; font-weight: bold; color:blue;">Github link</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br><hr>
-  <br>
-  <!-- Bootstrap and jQuery Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS (Animate on Scroll)
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50,
+        });
+
+        // Project Filtering Logic
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectItems = document.querySelectorAll('.project-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Set active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                projectItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
